@@ -2,7 +2,7 @@
   <head>
     <style>
       body {
-          background: #f2f2f2;
+        background: #f2f2f2;
       }
 
       ul {
@@ -24,58 +24,58 @@
         text-decoration: none;
         box-shadow: -2em 1.5em 0 #e1e1e1;
         transition: all .25s linear;
+      }
 
-        &:hover {
+      .list-item:hover {
           background: #ff6e42;
           color: #fffcfb;
           transform: translate(.9em, -.9em);
           transition: all .25s linear;
           box-shadow: -2em 2em 0 #e1e1e1;
+      }  
 
-          &:before, 
-          &:after { 
-            transition: all .25s linear; 
-          }
+      .list-item:before, 
+      .list-item:after { 
+        transition: all .25s linear; 
+      }
 
-          &:before {
-            background: #b65234;
-            width: 1em;
-            top: .5em;
-            left: -1em;
-          }
+      .list-item:before {
+        background: #b65234;
+        width: 1em;
+        top: .5em;
+        left: -1em;
+      }
 
-          &:after {
-            background: #b65234;
-            width: 1em;
-            bottom: -2.5em;
-            left: 1em;
-            height: 4em;
-          }
-        }
+      .list-item:after {
+        background: #b65234;
+        width: 1em;
+        bottom: -2.5em;
+        left: 1em;
+        height: 4em;
+      }
 
-        &:before, 
-        &:after {
-          content: '';
-          position: absolute;
-          transition: all .25s linear;
-          width: .5em;
-        }
+      .list-item:before, 
+      .list-item:after {
+        content: '';
+        position: absolute;
+        transition: all .25s linear;
+        width: .5em;
+      }
 
-        &:after {
-          height: 4em;
-          background: #181818;
-          bottom: -2.25em;
-          left: 1.5em;
-          transform: rotate(90deg) skew(0,45deg);
-        }
+      .list-item:after {
+        height: 4em;
+        background: #181818;
+        bottom: -2.25em;
+        left: 1.5em;
+        transform: rotate(90deg) skew(0,45deg);
+      }
 
-        &:before {
-          height: 2.5em;
-          background: #121212;
-          top: .25em;
-          left: -.5em;
-          transform: skewY(-45deg);
-        }
+      .list-item:before {
+        height: 2.5em;
+        background: #121212;
+        top: .25em;
+        left: -.5em;
+        transform: skewY(-45deg);
       }
     </style>
   </head>
