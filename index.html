@@ -58,6 +58,10 @@
         position: relative;
         transform: rotate(-35deg) skew(20deg,5deg);
       }
+	  
+	  i {
+		position: relative; top: 0.625em;
+	  }
 
       .list-item {
         background: #000;
@@ -127,27 +131,37 @@
         transform: skewY(-45deg);
       }
     </style>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <ul>
-      <li id="bar_chart">
-        <a class="list-item" href="#"><i class="icon-bar-chart"></i></a>
-       </li>
-      <li id="tasks">
-        <a class="list-item" href="#"><i class="icon-tasks"></i></a>
-       </li>
-      <li id="alerts">
-        <a class="list-item" href="#"><i class="icon-bell"></i></a>
-       </li>
-      <li id="comments">
-        <a class="list-item" href="#"><i class="icon-comment"></i></a>
-       </li>
-      <li id="sitemap">
-        <a class="list-item" href="#"><i class="icon-sitemap"></i></a>
-       </li>
-    </ul>
+	<nav id="navigation">
+		<ul>
+		  <li id="bar_chart" onclick="setSelected('Bar-Chart')">
+			<a class="list-item" href="#"><i class="icon-bar-chart"></i></a>
+		   </li>
+		  <li id="tasks" onclick="setSelected('Tasks')">
+			<a class="list-item" href="#"><i class="icon-tasks"></i></a>
+		   </li>
+		  <li id="alerts" onclick="setSelected('Alerts')">
+			<a class="list-item" href="#"><i class="icon-bell"></i></a>
+		   </li>
+		  <li id="comments" onclick="setSelected('Comments')">
+			<a class="list-item" href="#"><i class="icon-comment"></i></a>
+		   </li>
+		  <li id="sitemap" onclick="setSelected('Sitemap')">
+			<a class="list-item" href="#"><i class="icon-sitemap"></i></a>
+		   </li>
+		</ul>
+	</nav>
+    <div id="selected"></div>
+	<div>
+	   <button id="some_id">test button</button>
+	   <button id="some_id2">test button</button>
+   <div>
+   <script>
+      function setSelected(selection) {
+        document.getElementById("selected").innerHTML = selection;
+      }
+    </script>
   </body>
-   <button id="some_id">test button</button>
-   <button id="some_id2">test button</button>
 </html>
